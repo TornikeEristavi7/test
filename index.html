@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Login Section -->
+  <div id="login-page">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- Store Section (hidden before login) -->
+  <div id="store-page" style="display:none;">
+    <h2>Welcome to the Store</h2>
+    <div id="store-container">gi
+      <!-- Products Section -->
+      <div id="products"></div>
+
+      <!-- Basket Section -->
+      <div id="basket-container">
+        <h3>Your Basket</h3>
+        <ul id="basket"></ul>
+        <p>Total: $<span id="total">0</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Include your JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
